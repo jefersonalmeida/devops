@@ -2,7 +2,7 @@
 FROM node
 
 # Autor/Mantenedor
-MAINTAINER Jonathan Baraldi
+MAINTAINER Jeferson Almeida
 
 
 RUN mkdir -p /src 
