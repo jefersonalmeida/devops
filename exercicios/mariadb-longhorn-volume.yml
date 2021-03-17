@@ -53,7 +53,7 @@ spec:
         name: mysql
         env:
         - name: MYSQL_ROOT_PASSWORD
-          value: changeme
+          value: rancher
         ports:
         - containerPort: 3306
           name: mysql
@@ -61,11 +61,7 @@ spec:
         volumeMounts:
         - name: mysql-volume
           mountPath: /var/lib/mysql
-        
-        env:
-        - name: MYSQL_ROOT_PASSWORD
-          value: "rancher"
-      
+
       volumes:
       - name: mysql-volume
         persistentVolumeClaim:
